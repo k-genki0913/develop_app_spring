@@ -1,0 +1,46 @@
+{
+    "name": "spring-app",
+    "dockerComposeFile": "./docker-compose.yaml",
+    "service": "spring-app",
+    "workspaceFolder": "/app",
+    "shutdownAction": "stopCompose",
+    "customizations": {
+        "vscode": {
+            // 拡張機能
+            "extensions": [
+                // Java
+                "redhat.java",
+                "vscjava.vscode-java-debug",
+                "vscjava.vscode-java-test",
+                "vscjava.vscode-maven",
+                "vscjava.vscode-gradle",
+                "vscjava.vscode-java-dependency",
+                // Spring
+                "vmware.vscode-spring-boot",
+                "vscjava.vscode-spring-boot-dashboard",
+                "vscjava.vscode-spring-initializr",
+                // VSCode用
+                // VSCode用
+                "esbenp.prettier-vscode",
+                "mosapride.zenkaku",
+                "shardulm94.trailing-spaces",
+                "oderwat.indent-rainbow",
+                "anteprimorac.html-end-tag-labels",
+                "vincaslt.highlight-matching-tag",
+                "christian-kohler.path-intellisense",
+                "mhutchie.git-graph"
+            ],
+            "settings": {
+                "editor.formatOnSave": true,
+                "editor.defaultFormatter": null,
+                // Prettier設定
+                "prettier.singleQuote": true,
+                "prettier.jsxSingleQuote": true,
+                "prettier.printWidth": 120,
+                "prettier.tabWidth": 4,
+                // Js, Tsのシングルクォート設定
+                "js/ts.preferences.quoteStyle": "single"
+            }
+        }
+    }
+}
