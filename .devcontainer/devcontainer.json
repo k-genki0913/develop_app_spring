@@ -9,7 +9,7 @@
             // 拡張機能
             "extensions": [
                 // Java
-                "redhat.java",
+                "redhat.java@1.14.0",
                 "vscjava.vscode-java-debug",
                 "vscjava.vscode-java-test",
                 "vscjava.vscode-maven",
@@ -39,7 +39,12 @@
                 "prettier.printWidth": 120,
                 "prettier.tabWidth": 4,
                 // Js, Tsのシングルクォート設定
-                "js/ts.preferences.quoteStyle": "single"
+                "js/ts.preferences.quoteStyle": "single",
+                "[java]": {
+                    "editor.defaultFormatter": "redhat.java"
+                },
+                "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m",
+                "java.autobuild.enabled":false
             }
         }
     }
