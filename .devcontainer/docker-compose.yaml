@@ -1,33 +1,33 @@
 services:
-  spring-app:
-    build:
-      context: ../
-      dockerfile: .devcontainer/Dockerfile
-    container_name: spring-app
-    tty: true
-    environment:
-      - POSTGRES_DB=${POSTGRES_DATABASE_NAME}
-      - POSTGRES_USER=${POSTGRES_USER}
-      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
-    volumes:
-      - ../:/app
-    ports:
-      - 8001:8000
-    depends_on:
-      - spring-db
+    spring-app:
+        build:
+            context: ../
+            dockerfile: .devcontainer/Dockerfile
+        container_name: spring-app
+        tty: true
+        environment:
+            POSTGRES_DB: ${POSTGRES_DATABASE_NAME}
+            POSTGRES_USER: ${POSTGRES_USER}
+            POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+        volumes:
+            - ../:/app
+        ports:
+            - 8001:8000
+        depends_on:
+            - spring-db
 
-  spring-db:
-    image: postgres:17
-    container_name: spring-db
-    environment:
-      - POSTGRES_DB=${POSTGRES_DATABASE_NAME}
-      - POSTGRES_USER=${POSTGRES_USER}
-      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
-    ports:
-      - 5432:5432
-    volumes:
-      - db-store:/var/lib/postgresql
-      - ./postgres_logs:/var/log/postgresql
+    spring-db:
+        image: postgres:17
+        container_name: spring-db
+        environment:
+            POSTGRES_DB: ${POSTGRES_DATABASE_NAME}
+            POSTGRES_USER: ${POSTGRES_USER}
+            POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+        ports:
+            - 5432:5432
+        volumes:
+            - db-store:/var/lib/postgresql
+            - ./postgres_logs:/var/log/postgresql
 
 volumes:
-  db-store:
+    db-store:

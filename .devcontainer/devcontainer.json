@@ -28,7 +28,8 @@
                 "anteprimorac.html-end-tag-labels",
                 "vincaslt.highlight-matching-tag",
                 "christian-kohler.path-intellisense",
-                "mhutchie.git-graph"
+                "mhutchie.git-graph",
+                "cweijan.vscode-database-client2"
             ],
             "settings": {
                 "editor.formatOnSave": true,
