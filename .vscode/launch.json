@@ -16,11 +16,51 @@
         },
         {
             "type": "java",
-            "name": "Spring Boot-DiApplication<di>",
+            "name": "Spring Boot-SpringmvcviewsampleApplication<springmvcviewsample>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
-            "mainClass": "com.example.demo.di.DiApplication",
-            "projectName": "di",
+            "mainClass": "com.example.springmvcviewsample.SpringmvcviewsampleApplication",
+            "projectName": "springmvcviewsample",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringmvcmodelsampleApplication<springmvcmodelsample>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.springmvcmodelsample.SpringmvcmodelsampleApplication",
+            "projectName": "springmvcmodelsample",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ThymeleafsampleApplication<thymeleafsample>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.thymeleafsample.ThymeleafsampleApplication",
+            "projectName": "thymeleafsample",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-RequestparamsampleApplication<requestparamsample>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.requestparamsample.RequestparamsampleApplication",
+            "projectName": "requestparamsample",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ValidationsampleApplication<validationsample>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.validationsample.ValidationsampleApplication",
+            "projectName": "validationsample",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
